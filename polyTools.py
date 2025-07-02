@@ -41,5 +41,12 @@ def polySubtract(a: list, b: list):
         result.append(ap[i] - bp[i])
     return trim(result)
 
+def polyMultScalar(a: list, scalar: float):
+    result = []
+    for i in a:
+        result.append(i * scalar)
+    return result
+
+
 
 
