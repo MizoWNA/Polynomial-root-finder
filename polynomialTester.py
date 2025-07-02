@@ -1,5 +1,5 @@
 from mySuperscript import to_superscript
-from rootFinder import derive
+from polyTools import derive
 
 
 def printHelper(inputOriginal):
