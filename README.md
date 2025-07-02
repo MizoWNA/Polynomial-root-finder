@@ -5,9 +5,8 @@ A WIP simple polynomial real root finder using Strum's Theorem and Newton's Algo
 
 # Currently Implemented
 
-#### Derivative function:
-> Takes the derivative of the input polynomial.
-
+## polyTools Suite
+> A bunch of tools used to do polynomial arithmatic operations including multiplication, addition, subrtraction, and division remainders (Quotients are unused so not implemented), as well as other tools used to trim, padd, and find the derivative of a polynomial.
 
 # Helper Functions
 
@@ -24,8 +23,6 @@ A WIP simple polynomial real root finder using Strum's Theorem and Newton's Algo
 
 # WIP Functions
 
-#### polyDivide:
-> Divides 2 polynomials and returns the quotient and remainder.
 #### Strum's Algorithm
 > Finds the number of real roots a polynomial has using polyDivide and derive.
 #### Slicer
