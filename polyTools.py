@@ -7,15 +7,13 @@ def derive(x):
     p = p - 1
   return derivedCoeff
 
+def degree(a: list):
+    return len(a) - 1
 
-
-def degree(poly):
-    return len(poly) - 1
-
-def trim(poly):
-    while poly and poly[0] == 0:
-        poly.pop(0)
-    return poly or [0]
+def trim(a: list):
+    while a and a[0] == 0:
+        a.pop(0)
+    return a or [0]
 
 def padd(a: list, b: list):
     # Darlin, here we create a copy of the original inputs so we dont run into problems if we reuse the inputs somewhere else
