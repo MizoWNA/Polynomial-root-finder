@@ -5,7 +5,7 @@ A WIP simple polynomial real root finder using Strum's Theorem and Newton's Algo
 
 # Currently Implemented
 
-## polyTools Suite
+## polyTools
 > A bunch of tools used to do polynomial arithmatic operations including multiplication, addition, subrtraction, and division remainders (Quotients are unused so not implemented), as well as other tools used to trim, padd, and find the derivative of a polynomial.
 
 # Helper Functions
