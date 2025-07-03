@@ -49,13 +49,12 @@ def polyMultScalar(a: list, scalar: float):
 def polyRemainder(a: list, b: list):
     remainder = a[:]
     b = b[:]
-
     while degree(remainder) >= degree(b):
         leadingCoeff = remainder[0] / b[0]
         scaledTerm = polyMultScalar(b, leadingCoeff) + [0] * (degree(remainder) - degree(b))
         remainder = trim(polySubtract(remainder, scaledTerm))
     return trim(remainder)
 
-
+print("Hello World")
 
 
