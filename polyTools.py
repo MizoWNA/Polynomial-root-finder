@@ -16,7 +16,6 @@ def trim(a: list):
     return a or [0]
 
 def padd(a: list, b: list):
-    # Darlin, here we create a copy of the original inputs so we dont run into problems if we reuse the inputs somewhere else
     a = a[:]
     b = b[:]
     while degree(a) < degree(b):
@@ -45,7 +44,6 @@ def polyMultScalar(a: list, scalar: float):
         result.append(i * scalar)
     return result
 
-
 def polyRemainder(a: list, b: list):
     remainder = a[:]
     b = b[:]
@@ -54,7 +52,3 @@ def polyRemainder(a: list, b: list):
         scaledTerm = polyMultScalar(b, leadingCoeff) + [0] * (degree(remainder) - degree(b))
         remainder = trim(polySubtract(remainder, scaledTerm))
     return trim(remainder)
-
-print("Hello World")
-
-
