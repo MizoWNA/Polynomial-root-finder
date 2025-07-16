@@ -53,5 +53,13 @@ def polyRemainder(a: list, b: list):
         remainder = trim(polySubtract(remainder, scaledTerm))
     return trim(remainder)
 
-def isZeroPoly(poly):
-    return all(coef == 0 for coef in poly)
+def isZeroPoly(polynomial: list):
+    return all(coef == 0 for coef in polynomial)
+
+def polyBound(polynomial: list):
+    polynomial = polynomial[:]
+    fixedPolynomial = []
+    for i in polynomial:
+        fixedPolynomial.append(abs(i))
+    M = 1 + max(fixedPolynomial[1:]) / fixedPolynomial[0]
+    return [M * -1, M]
