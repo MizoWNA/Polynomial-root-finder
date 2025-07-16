@@ -52,3 +52,6 @@ def polyRemainder(a: list, b: list):
         scaledTerm = polyMultScalar(b, leadingCoeff) + [0] * (degree(remainder) - degree(b))
         remainder = trim(polySubtract(remainder, scaledTerm))
     return trim(remainder)
+
+def isZeroPoly(poly):
+    return all(coef == 0 for coef in poly)
