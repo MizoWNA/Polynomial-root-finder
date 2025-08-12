@@ -62,4 +62,4 @@ def polyBound(polynomial: list):
     for i in polynomial:
         fixedPolynomial.append(abs(i))
     M = 1 + max(fixedPolynomial[1:]) / fixedPolynomial[0]
-    return [M * -1, M]
+    return M
