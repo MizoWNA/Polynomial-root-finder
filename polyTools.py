@@ -10,10 +10,10 @@ def derive(x):
 def degree(a: list):
     return len(a) - 1
 
-def trim(a: list):
-    while a and a[0] == 0:
-        a.pop(0)
-    return a or [0]
+def trim(poly: list):
+    while poly and abs(poly[0]) < 1e-12:
+        poly.pop(0)
+    return poly if poly else [0]
 
 def padd(a: list, b: list):
     a = a[:]
@@ -53,8 +53,8 @@ def polyRemainder(a: list, b: list):
         remainder = trim(polySubtract(remainder, scaledTerm))
     return trim(remainder)
 
-def isZeroPoly(polynomial: list):
-    return all(coef == 0 for coef in polynomial)
+def isZeroPoly(poly: list):
+    return all(abs(coef) < 1e-12 for coef in poly)
 
 def polyBound(polynomial: list):
     polynomial = polynomial[:]
