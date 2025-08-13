@@ -24,3 +24,15 @@ I couldve just used the bisection method and called it a day, but that didnt see
 # WIP
 > Finally nothing left!
 > Well, thats a lie. I'm hoping to improve this by also adding in a way to find the multiplicty of a root, as well as finding complex roots.
+
+# Usage
+Its stupidly simple, just run your polynomial, formatted like so:
+> [coefeccient1, coeffecient2, coeffecient3, ...., constant]
+> 
+So a polynomial like this
+> 3x^3 - 5x^2 + 4
+>
+would input like so:
+> [3, -5, 0 ,4]
+>
+From there, just input that into the **newtonsMethod()** function in rootFinder.py along with a maximum iteration limit as its second argument.
