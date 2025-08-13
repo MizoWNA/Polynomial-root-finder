@@ -1,6 +1,10 @@
 # Polynomial Root Finder
 
-A WIP simple polynomial real root finder using Strum's Theorem and Newton's Algorithm.
+A (Finally finished!) simple polynomial real root finder using Strum's Theorem, Bisection method, and Newton's Algorithm. First real python project, go easy!
+
+# Why these methods?
+Simply because they seemed the easiest and most fun to work with!
+I couldve just used the bisection method and called it a day, but that didnt seem good enough to me, so i decided to also combie it with newton's method for better accuracy (and also more fun!)
 
 
 # Currently Implemented
@@ -8,24 +12,15 @@ A WIP simple polynomial real root finder using Strum's Theorem and Newton's Algo
 ## polyTools
 > A bunch of tools used to do polynomial arithmatic operations including multiplication, addition, subrtraction, and division remainders (Quotients are unused so not implemented), as well as other tools used to trim, padd, and find the derivative of a polynomial.
 
-# Helper Functions
-
-#### toSuperscript:
-> Turns problematic syntax like:
-> 1x^4-1x^2-12x+4
-> Into beautiful text like:
-> 1x⁴ - 1x² - 0.3333333333333333x + 4
-
-
-#### printHelper:
-> Debug tool used to proofread function outputs.
-
-
-# WIP Functions
-
-#### Strum's Algorithm
+## Strum's Algorithm
 > Finds the number of real roots a polynomial has using polyDivide and derive.
-#### Slicer
+## Bisection
 > Finds the interval every real root is in using Strum's Algorithm.
-#### Newton's Algorithm
-> Using guesses in Slicer's intervals, finds all real roots of a polynomial.
+## Newton's Algorithm
+> Using guesses in Bisection's intervals, finds all real roots of a polynomial.
+
+
+
+# WIP
+> Finally nothing left!
+> Well, thats a lie. I'm hoping to improve this by also adding in a way to find the multiplicty of a root, as well as finding complex roots.
