@@ -33,5 +33,28 @@ def rootFind(poly: list):
         return boundsCompleted
     else: 
         return "ERROR! Ran into a problem!"
+    
 
-print(rootFind([42, 0, 4, 0, -78, 1, -9, 25]))
+def newtonsMethod(poly: list, iterations: int):
+    poly = poly[:]
+    bounds = rootFind(poly)
+    results = []
+    if bounds == "ERROR! Ran into a problem!":
+        return bounds
+    else:
+        for bound in bounds:
+            x0 = (bound[0] + bound[1]) * 0.5
+            for i in range(iterations):
+                d = polyEval(derive(poly), x0)
+                if d < 1e-12:
+                    break
+                else:
+                    x1 = x0 - (polyEval(poly, x0) / d)
+                    x0 = x1
+            results.append(x0)
+
+    return results
+
+
+print(newtonsMethod([42, 0, 4, 0, -78, 1, -9, 25], 10))
+

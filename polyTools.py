@@ -63,3 +63,9 @@ def polyBound(polynomial: list):
         fixedPolynomial.append(abs(i))
     M = 1 + max(fixedPolynomial[1:]) / fixedPolynomial[0]
     return M
+
+def polyEval(coeffs, x):
+    result = 0
+    for c in coeffs:
+        result = result * x + c
+    return result
